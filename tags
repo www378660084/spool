@@ -1,0 +1,81 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+EVENTS	spoll.c	36;"	d	file:
+FD	spoll.c	37;"	d	file:
+IS_EVENT_ERR	spoll.h	38;"	d
+IS_EVENT_HUP	spoll.h	39;"	d
+IS_EVENT_IN	spoll.h	35;"	d
+IS_EVENT_OUT	spoll.h	36;"	d
+Makefile	Makefile	1;"	F
+POLL_DEFAULT_SIZE	spoll.c	15;"	d	file:
+POLL_FOREVER	spoll.h	28;"	d
+POLL_H_	spoll.h	9;"	d
+POLL_MALLOC_ERR	spoll.h	31;"	d
+POLL_NULL	spoll.h	30;"	d
+POLL_OVER_SIZE	spoll.h	33;"	d
+POLL_TIMEOUT	spoll.h	32;"	d
+__anon1::count	spoll.c	/^    int count;$/;"	m	struct:__anon1	file:	access:public
+__anon1::cur	spoll.c	/^    int cur;$/;"	m	struct:__anon1	file:	access:public
+__anon1::events	spoll.c	/^    struct epoll_event events[0];$/;"	m	struct:__anon1	typeref:struct:__anon1::epoll_event	file:	access:public
+__anon1::fd	spoll.c	/^    int fd;$/;"	m	struct:__anon1	file:	access:public
+__anon1::items	spoll.c	/^    poll_item_t* items;$/;"	m	struct:__anon1	file:	access:public
+__anon1::size	spoll.c	/^    int size;$/;"	m	struct:__anon1	file:	access:public
+__anon2::events	spoll.h	/^    int events;$/;"	m	struct:__anon2	access:public
+__anon2::fd	spoll.h	/^    int fd;$/;"	m	struct:__anon2	access:public
+count	spoll.c	/^    int count;$/;"	m	struct:__anon1	file:	access:public
+cur	spoll.c	/^    int cur;$/;"	m	struct:__anon1	file:	access:public
+default_poll	spoll.c	/^static poll_t* default_poll = NULL;$/;"	v	file:
+events	spoll.c	/^    struct epoll_event events[0];$/;"	m	struct:__anon1	typeref:struct:__anon1::epoll_event	file:	access:public
+events	spoll.h	/^    int events;$/;"	m	struct:__anon2	access:public
+fd	spoll.c	/^    int fd;$/;"	m	struct:__anon1	file:	access:public
+fd	spoll.c	/^    int fd;$/;"	m	struct:poll_item	file:	access:public
+fd	spoll.h	/^    int fd;$/;"	m	struct:__anon2	access:public
+fd	test.c	/^int fd;$/;"	v
+items	spoll.c	/^    poll_item_t* items;$/;"	m	struct:__anon1	file:	access:public
+main	test.c	/^int main(int argc,char* argv[]) {$/;"	f	signature:(int argc,char* argv[])
+next	spoll.c	/^    struct poll_item* next;$/;"	m	struct:poll_item	typeref:struct:poll_item::poll_item	file:	access:public
+on_data_in	spoll.c	/^    poll_cbk_t on_data_in;$/;"	m	struct:poll_item	file:	access:public
+on_data_in	test.c	/^void on_data_in(int _fd){$/;"	f	signature:(int _fd)
+on_data_out	spoll.c	/^    poll_cbk_t on_data_out;$/;"	m	struct:poll_item	file:	access:public
+on_error	spoll.c	/^    poll_cbk_t on_error;$/;"	m	struct:poll_item	file:	access:public
+poll_add	spoll.c	/^int poll_add(void* poll,int fd){$/;"	f	signature:(void* poll,int fd)
+poll_add	spoll.h	/^int poll_add(void* poll,int fd);$/;"	p	signature:(void* poll,int fd)
+poll_add_events	spoll.c	/^int poll_add_events(void* poll,int fd,int events){$/;"	f	signature:(void* poll,int fd,int events)
+poll_add_events	spoll.h	/^int poll_add_events(void* poll,int fd,int events);$/;"	p	signature:(void* poll,int fd,int events)
+poll_cbk_t	spoll.h	/^typedef void (*poll_cbk_t)(int fd);$/;"	t
+poll_delete	spoll.c	/^int poll_delete(void* poll){$/;"	f	signature:(void* poll)
+poll_delete	spoll.h	/^int poll_delete(void* poll);$/;"	p	signature:(void* poll)
+poll_event_t	spoll.h	/^}poll_event_t;$/;"	t	typeref:struct:__anon2
+poll_get_default	spoll.c	/^void* poll_get_default(){$/;"	f
+poll_get_default	spoll.h	/^void* poll_get_default();$/;"	p	signature:()
+poll_item	spoll.c	/^typedef struct poll_item{$/;"	s	file:
+poll_item::fd	spoll.c	/^    int fd;$/;"	m	struct:poll_item	file:	access:public
+poll_item::next	spoll.c	/^    struct poll_item* next;$/;"	m	struct:poll_item	typeref:struct:poll_item::poll_item	file:	access:public
+poll_item::on_data_in	spoll.c	/^    poll_cbk_t on_data_in;$/;"	m	struct:poll_item	file:	access:public
+poll_item::on_data_out	spoll.c	/^    poll_cbk_t on_data_out;$/;"	m	struct:poll_item	file:	access:public
+poll_item::on_error	spoll.c	/^    poll_cbk_t on_error;$/;"	m	struct:poll_item	file:	access:public
+poll_item_for_fd	spoll.c	/^poll_item_t* poll_item_for_fd(void* poll,int fd){$/;"	f	signature:(void* poll,int fd)
+poll_item_t	spoll.c	/^}poll_item_t;$/;"	t	typeref:struct:poll_item	file:
+poll_loop	spoll.c	/^void poll_loop(void* poll){$/;"	f	signature:(void* poll)
+poll_loop	spoll.h	/^void poll_loop(void* poll);$/;"	p	signature:(void* poll)
+poll_loop_default	spoll.c	/^void poll_loop_default(){$/;"	f
+poll_loop_default	spoll.h	/^void poll_loop_default();$/;"	p	signature:()
+poll_new	spoll.c	/^void* poll_new(int size){$/;"	f	signature:(int size)
+poll_new	spoll.h	/^void* poll_new(int size);$/;"	p	signature:(int size)
+poll_register	spoll.c	/^int poll_register(void* poll,int fd,poll_cbk_t on_data_in,poll_cbk_t on_data_out,poll_cbk_t on_error){$/;"	f	signature:(void* poll,int fd,poll_cbk_t on_data_in,poll_cbk_t on_data_out,poll_cbk_t on_error)
+poll_register	spoll.h	/^int poll_register(void* poll,int fd,poll_cbk_t on_data_in,poll_cbk_t on_data_out,poll_cbk_t on_error);$/;"	p	signature:(void* poll,int fd,poll_cbk_t on_data_in,poll_cbk_t on_data_out,poll_cbk_t on_error)
+poll_register_default	spoll.c	/^int poll_register_default(int fd,poll_cbk_t on_data_in,poll_cbk_t on_data_out,poll_cbk_t on_error){$/;"	f	signature:(int fd,poll_cbk_t on_data_in,poll_cbk_t on_data_out,poll_cbk_t on_error)
+poll_register_default	spoll.h	/^int poll_register_default(int fd,poll_cbk_t on_data_in,poll_cbk_t on_data_out,poll_cbk_t on_error);$/;"	p	signature:(int fd,poll_cbk_t on_data_in,poll_cbk_t on_data_out,poll_cbk_t on_error)
+poll_run_once	spoll.c	/^void poll_run_once(void* poll,int timeout){$/;"	f	signature:(void* poll,int timeout)
+poll_run_once	spoll.h	/^void poll_run_once(void* poll,int timeout);$/;"	p	signature:(void* poll,int timeout)
+poll_t	spoll.c	/^}poll_t;$/;"	t	typeref:struct:__anon1	file:
+poll_wait_event	spoll.c	/^int poll_wait_event(void* poll,poll_event_t* ev,int timeout){$/;"	f	signature:(void* poll,poll_event_t* ev,int timeout)
+poll_wait_event	spoll.h	/^int poll_wait_event(void* poll,poll_event_t* ev,int timeout);$/;"	p	signature:(void* poll,poll_event_t* ev,int timeout)
+size	spoll.c	/^    int size;$/;"	m	struct:__anon1	file:	access:public
+spoll.c	spoll.c	1;"	F
+spoll.h	spoll.h	1;"	F
+test.c	test.c	1;"	F
