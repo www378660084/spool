@@ -5,8 +5,8 @@
  *      Author: Administrator
  */
 
-#ifndef POLL_H_
-#define POLL_H_
+#ifndef SPOLL_H_
+#define SPOLL_H_
 #include <sys/epoll.h>
 
 /***********************loop mode example ************
@@ -76,4 +76,4 @@ void poll_loop_default();
 //poll_loop_default();
 **********************end example***********************************/
 
-#endif /* POLL_H_ */
+#endif /* SPOLL_H_ */
