@@ -1,11 +1,10 @@
 # spool
 
-===================================
-a simple epool client for multi file read&write in single thread
+##a simple epool client for multi file read&write in single thread
 
-
+###loop mode example
 ---------------------------------------------
-loop mode example
+
 
   int count;
   char buffer[512];
@@ -21,8 +20,9 @@ loop mode example
    }
    poll_close(poll);
 
+###event mode example
 ------------------------------
-event mode example
+
 
 void on_data_in(int fd){
     char buffer[256];
